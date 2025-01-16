@@ -5,14 +5,21 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: #181818;
   color: white;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth"100;
 }
 
 header {
   background-color: #212121;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -20,7 +27,7 @@ main {
   margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 footer {
@@ -45,6 +52,45 @@ figure {
 
 img {
   max-width: 100%;
+}
+
+
+/* HOME */
+.add-travel-button{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* DETTAGLIO */
+
+input {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #212121;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s;
+  user-select: none;
+}
+
+button:hover {
+  scale: 1.05;
+  background-color: gray;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem;
 }
 
 

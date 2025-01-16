@@ -1,13 +1,17 @@
 import { useParams, Link } from "react-router-dom"
 import { useState } from "react"
-import viaggi from "../data/viaggi.js"
 import CardPerson from "../components/CardPerson/CardPerson.jsx"
+import GlobalContext from "../contexts/GlobalContext.js"
+import { useContext } from "react"
+
 
 function DettaglioViaggio() {
 
     const { id } = useParams()
 
-    const [singoloViaggio] = viaggi.filter(viaggio => (viaggio.id == id))
+    const { newViaggi } = useContext(GlobalContext)
+
+    const [singoloViaggio] = newViaggi.filter(viaggio => (viaggio.id == id))
     const [search, setSearch] = useState("")
     const [index, setIndex] = useState(0)
 
@@ -25,8 +29,10 @@ function DettaglioViaggio() {
 
     return (
         <div className="container">
-            <Link to="/"> <button>Indietro</button></Link>
-            <input type="text" value={search} onChange={handleSearch} />
+            <div className="inputs">
+                <Link to="/"> <button>Indietro</button></Link>
+                <input type="text" placeholder="Cerca" value={search} onChange={handleSearch} />
+            </div>
             <div className="container">
                 <div className="row">
                     {search ? singoloViaggio.partecipanti.filter(obj => (obj.nome + " " + obj.cognome).toLowerCase().includes(search.toLowerCase())).map((partecipante, i) => {

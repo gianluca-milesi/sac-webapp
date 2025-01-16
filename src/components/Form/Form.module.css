@@ -1,0 +1,14 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_control_dates{
+    justify-content: center;
+}

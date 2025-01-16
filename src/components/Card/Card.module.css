@@ -3,4 +3,12 @@
     border: 1px solid white;
     border-radius: 10px;
     background-color: #212121;
+    margin: 0.5rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.card:hover{
+    scale: 1.025;
 }
