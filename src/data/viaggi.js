@@ -2,8 +2,8 @@ const viaggi = [
     {
         id: 1,
         localita: "Roma",
-        dataPartenza: "2025-02-01",
-        dataRitorno: "2025-02-10",
+        dataPartenza: "01-02-2025",
+        dataRitorno: "02-10-2025",
         partecipanti: [
             { id: 1, nome: "Mario", cognome: "Rossi", numeroTelefono: "1234567890", codiceFiscale: "RSSMRA80A01H501Z", email: "mario.rossi@example.com" },
             { id: 2, nome: "Giulia", cognome: "Bianchi", numeroTelefono: "0987654321", codiceFiscale: "BNCGLL85M58Z404E", email: "giulia.bianchi@example.com" },
@@ -20,8 +20,8 @@ const viaggi = [
     {
         id: 2,
         localita: "Milano",
-        dataPartenza: "2025-03-15",
-        dataRitorno: "2025-03-22",
+        dataPartenza: "15-03-2025",
+        dataRitorno: "22-03-2025",
         partecipanti: [
             { id: 1, nome: "Giovanni", cognome: "Neri", numeroTelefono: "2233445566", codiceFiscale: "NRIGVN75H04Z404M", email: "giovanni.neri@example.com" },
             { id: 2, nome: "Francesca", cognome: "Rossi", numeroTelefono: "3344556677", codiceFiscale: "RSSFNC84T49C351Q", email: "francesca.rossi@example.com" },
@@ -38,8 +38,8 @@ const viaggi = [
     {
         id: 3,
         localita: "Napoli",
-        dataPartenza: "2025-04-10",
-        dataRitorno: "2025-04-20",
+        dataPartenza: "10-04-2025",
+        dataRitorno: "20-04-2025",
         partecipanti: [
             { id: 1, nome: "Gabriele", cognome: "Rossi", numeroTelefono: "2133445566", codiceFiscale: "RSSGBL76C01H501T", email: "gabriele.rossi@example.com" },
             { id: 2, nome: "Elena", cognome: "Bianchi", numeroTelefono: "3244556677", codiceFiscale: "BNCHLN84M02A794D", email: "elena.bianchi@example.com" },
@@ -56,8 +56,8 @@ const viaggi = [
     {
         id: 4,
         localita: "Venezia",
-        dataPartenza: "2025-05-01",
-        dataRitorno: "2025-05-07",
+        dataPartenza: "01-05-2025",
+        dataRitorno: "07-05-2025",
         partecipanti: [
             { id: 1, nome: "Lucia", cognome: "Rossi", numeroTelefono: "1234567890", codiceFiscale: "RSSLCU85A02H501Z", email: "lucia.rossi@example.com" },
             { id: 2, nome: "Marco", cognome: "Bianchi", numeroTelefono: "0987654321", codiceFiscale: "BNCMRC72D20A794X", email: "marco.bianchi@example.com" },
@@ -74,8 +74,8 @@ const viaggi = [
     {
         id: 5,
         localita: "Firenze",
-        dataPartenza: "2025-06-01",
-        dataRitorno: "2025-06-10",
+        dataPartenza: "01-06-2025",
+        dataRitorno: "10-06-2025",
         partecipanti: [
             { id: 1, nome: "Carlo", cognome: "Rossi", numeroTelefono: "2233445566", codiceFiscale: "RSSCRL88A01H501W", email: "carlo.rossi@example.com" },
             { id: 2, nome: "Francesca", cognome: "Bianchi", numeroTelefono: "3344556677", codiceFiscale: "BNCFNC84T10F205L", email: "francesca.bianchi@example.com" },
