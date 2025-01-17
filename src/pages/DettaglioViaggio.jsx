@@ -3,6 +3,7 @@ import { useState } from "react"
 import CardPerson from "../components/CardPerson/CardPerson.jsx"
 import GlobalContext from "../contexts/GlobalContext.js"
 import { useContext } from "react"
+import FormPerson from "../components/FormPerson/FormPerson.jsx"
 
 
 function DettaglioViaggio() {
@@ -35,6 +36,7 @@ function DettaglioViaggio() {
             </div>
             <div className="container">
                 <div className="row">
+                    <h1>{singoloViaggio.localita}</h1>
                     {search ? singoloViaggio.partecipanti.filter(obj => (obj.nome + " " + obj.cognome).toLowerCase().includes(search.toLowerCase())).map((partecipante, i) => {
                         return (
                             <div key={i} className="col-12" onClick={() => openOnClick(partecipante.id)}>
@@ -52,9 +54,9 @@ function DettaglioViaggio() {
                     }
                 </div>
             </div>
+            {/* <FormPerson person={singoloViaggio} /> */}
         </div>
     )
-
 }
 
 export default DettaglioViaggio

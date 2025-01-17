@@ -36,23 +36,24 @@ function Form() {
     }
 
 
-
     return (
-        <form action="" onSubmit={addTravel} className={style.form}>
-            <div className={style.form_control}>
-                <label htmlFor="">Nome Località</label>
-                <input type="text" name="localita" id="" onChange={handleFormData} value={formData.localita} />
-            </div>
-            <div className={style.form_control}>
-                <label htmlFor="">Data Partenza</label>
-                <input type="date" name="dataPartenza" id="" onChange={handleFormData} value={formData.dataPartenza} />
-            </div>
-            <div className={style.form_control}>
-                <label htmlFor="">Data ritorno</label>
-                <input type="date" name="dataRitorno" id="" onChange={handleFormData} value={formData.dataRitorno} />
-            </div>
-            <button>Aggiungi</button>
-        </form>
+        <div className={style.form_wrapper}>
+            <form action="" onSubmit={addTravel} className={style.form}>
+                <div className={style.form_control}>
+                    <label htmlFor="">Nome Località</label>
+                    <input type="text" name="localita" id="" onChange={handleFormData} value={formData.localita} />
+                </div>
+                <div className={style.form_control}>
+                    <label htmlFor="">Data Partenza</label>
+                    <input type="date" name="dataPartenza" id="" onChange={handleFormData} value={formData.dataPartenza} />
+                </div>
+                <div className={style.form_control}>
+                    <label htmlFor="">Data ritorno</label>
+                    <input type="date" name="dataRitorno" id="" onChange={handleFormData} value={formData.dataRitorno} />
+                </div>
+                <button>Aggiungi</button>
+            </form>
+        </div>
     )
 }
 
